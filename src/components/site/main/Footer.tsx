@@ -25,7 +25,6 @@ class Footer extends React.Component<FooterProps, FooterState> {
         <div className='footerNav'>
         <Row>
             <p>&copy; HoosierGoInc 2020</p>
-            <p>Contact Us!</p>
         </Row>
         </div>
                 

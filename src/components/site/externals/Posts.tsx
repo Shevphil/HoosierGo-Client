@@ -1,6 +1,9 @@
 import React from 'react';
+import {Row, Col, Container, } from 'reactstrap';
 
-class Alerts extends React.Component {
+
+
+class Posts extends React.Component {
 
 
     render(){
@@ -22,24 +25,24 @@ class Alerts extends React.Component {
              </div>
              <div className="rightcolumn">
                 <div className="card">
-                    <h2>About Me</h2>
+                    <h2>Profile</h2>
                     <div className="fakeimg">Image</div>
                     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
                 </div>
                 <div className="card">
-                <h3>Popular Post</h3>
+                <h3>Popular Posts</h3>
                     <div className="fakeimg">Image</div>
                     <div className="fakeimg">Image</div>
                     <div className="fakeimg">Image</div>
                 </div>
                 <div className="card">
-                    <h3>Follow Me</h3>
-                    <p>Some text..</p>
+                    <h3>Btown Twitter Feed</h3>
+                    <p>Live Twitter Feed Here</p>
                 </div>
-    </div>
-</div>  
+            </div>
+        </div>  
         )
     }
 }
 
-export default Alerts;
+export default Posts;

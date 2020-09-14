@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Auth from './components/authPage/Auth';
 // import Contact from './components/site/externals/Contact';
-// import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/site/main/Header';
 import Home from './components/site/main/Home';
 
@@ -51,8 +51,8 @@ class App extends React.Component <AppProps, AppState> {
     render(){
       return (
         <div className="App">
-          {/* <Auth updateToken={this.updateToken}/> */}
-        <Home clearToken={this.clearToken}/>
+          <Auth updateToken={this.updateToken}/>
+        <Home token={this.state.token} clearToken={this.clearToken}/>
         </div>
       );
     }

@@ -5,12 +5,13 @@ import Sidebar from './Sidebar';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 type HomeState={
-    token: string | null
+
 }
 
 type HomeProps={
 
-    clearToken: () => void
+    clearToken: () => void,
+    token:string | null
 }
 
 class Home extends React.Component <HomeProps, HomeState> {
@@ -21,22 +22,24 @@ class Home extends React.Component <HomeProps, HomeState> {
     }
   }
 
-  clearToken() {
-    localStorage.clear();
-    this.setState({token: null})
-  }
 
    render(){
        return(
            <div>
-        <Header/>
-        <div className="mainDiv">
-        {/* <Router>
-        <Sidebar clearToken={this.clearToken} />
-        </Router> */}
-        </div>
-        <Footer />
-        </div>
+            <Header/>
+            <br/>
+            <br/>
+            <h1>HELLO</h1>
+            <hr/>
+            <br/>
+            <div>
+              <Router>  
+                <Sidebar clearToken={this.props.clearToken} token={this.props.token}/>
+              </Router>
+                
+            </div>
+            <Footer />
+          </div>
        )
    } 
 }
