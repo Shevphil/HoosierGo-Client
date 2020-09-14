@@ -1,0 +1,73 @@
+.App {
+    text-align: center;
+}
+
+.sidebar {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 45px;
+    padding-left: 15px;
+}
+
+
+.sidebar-list-styling {
+    padding-left: 45px;
+    text-decoration: none;
+}
+.sidebar-display {
+    padding-left: 40px;
+}
+
+.mainDiv {
+    height: 100%;
+    min-height: 100%;
+}
+
+.header {
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+ 
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 65%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
